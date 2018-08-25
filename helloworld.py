@@ -1,4 +1,4 @@
-# Creating a fruit class
+# Creating a person class
 class Person:
     def __init__(self, name, surname, age):
         self.name = name
