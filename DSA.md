@@ -4,11 +4,13 @@
 
 Data structures are a systematic way to organise data in order to use it efficiently.
 
-### Foundation Terms
+### Important Terms
 
-* __Interface__ - Each data structure has an interface. Interface represents set of operations that a data structure can support. An interface only provides the list of supported operations, type of parameters they can accept and return type of these operations
+* __Interface__ - Each data structure has an interface. An interface represents a set of operations that a data structure can support. An interface only provides the list of supported operations, not the semantics of those operations which is **implementation**.
 
-* __Implementation__ - Implementation provides the internal representation of a data structure. Implementation also provides the definition of the algorithms used in the operations of the data structure.
+* __Implementation__ - Implementation provides the internal representation of a data structure. It also provides the definition of the algorithms used in the operations of the data structure i.e. it is the actual definition of what the interface is expected to do.
+
+An example to exercise these concepts is to consider a television. Its **interface** would be the buttons found on the television itself, which would be expected to do something when pressed. From looking at its interface, one could deduce that the television would not make coffee as there would be nowhere to put water into it (without damaging it, that is) and that its set of operations which the television can support is pressing its buttons. Therefere, the **implementation** of the television would be that when say, the ON button is pressed, the television would turn on (surprising, right?) and pressing the volume buttons would adjust its volume.
 
 ### Characteristics of a Data Structure
 
