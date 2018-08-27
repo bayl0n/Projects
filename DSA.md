@@ -15,3 +15,5 @@ Data structures are a systematic way to organise data in order to use it efficie
 * __Correctness__ - Data structure implementation should implement its interface correctly
 
 * __Time Complexity__ - Running time the execution time of operations should be as small as possible
+
+* __Space Complexity__ - The memory usage of a data structure should be small as possible
