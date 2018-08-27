@@ -1,6 +1,6 @@
 # What is this for?
 
-This was created for the purpose of having a way to track all of my programming progress.
+This was created for the purpose of having a way to track all of my programming progress. This is aimed for projects small enough that it doesn't warrant its own repository. Bigger projects will be put on seperate repositories.
 
 # When was this created?
 
