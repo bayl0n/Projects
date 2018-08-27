@@ -6,4 +6,6 @@ Data structures are a systematic way to organise data in order to use it efficie
 
 ### Foundation Terms
 
-* __Interface__ - Each data structure has an interface. Interface represents set of operations that a data structure can support
+* __Interface__ - Each data structure has an interface. Interface represents set of operations that a data structure can support. An interface only provides the list of supported operations, type of parameters they can accept and return type of these operations
+
+* __Implementation__ - Implementation provides the internal representation of data structure. Implementation also provides the definition of the algorithms used in the operations of the data structure.
