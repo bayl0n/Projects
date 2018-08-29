@@ -16,13 +16,24 @@ def closeapp():
 def dateverify(event):
     print("This is the date!")
 
+# Creates a label based on what is read in entry_box
+def createlabel():
+    entry_text = entry_box.get()
+    
+    task = Label(root, text=entry_text)
+    task.pack()
+
 # Make the date label
 date_label = Label(root, text=calendar.month(time.localtime()[0], time.localtime()[1]))
 date_label.bind("<Button-1>", dateverify)
 date_label.pack()
 
+# Make an entry box
+entry_box = Entry(root)
+entry_box.pack()
+
 # Make the close button
-b1 = Button(root, text="Close Application", command=closeapp)
+b1 = Button(root, text="Print", command=createlabel)
 b1.pack()
 
 # Run the application in the mainloop
