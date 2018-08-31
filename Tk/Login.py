@@ -7,9 +7,9 @@ root = Tk()
 root.resizable(False, False)
 root.title("Login Window")
 
-# Say that I'm gay
-def gay():
-    messagebox.askquestion("Are you gay?", "If a man were to go up to you and then offer some korean spicy garlic beef, would you accept it?")
+# Prompts the user to some request 
+def submit_login():
+    messagebox.askquestion("Login Submission", "Would you like to remember your password?")
 
 # Name label
 name_label = Label(root, text="Name:")
@@ -29,7 +29,7 @@ password_entry.config(show="☻")
 password_entry.grid(row=1, column=1)
 
 # Submit button
-submit_button = Button(root, text="Login", command=gay)
+submit_button = Button(root, text="Login", command=submit_login)
 submit_button.grid(row=2, columnspan=2)
 
 root.mainloop()
