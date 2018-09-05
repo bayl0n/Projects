@@ -1,6 +1,7 @@
 from tkinter import *
 from tkinter import messagebox
 from tkinter import ttk
+import random
 
 # Create a window
 root = Tk()
@@ -12,7 +13,7 @@ password_var = StringVar()
 password_var.set("Generate a password")
 
 def generate_password():
-    password_var.set("FOO")
+    password_var.set(str(random.randint(1,10)))
 
 ################ INTERFACE ###################
 
