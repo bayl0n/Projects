@@ -11,14 +11,15 @@ class App:
 
         # Game Variables
         self.guessNumber = random.randint(1, 100)
-        self.guessIndicator = StringVar()
+        self.guessDisplay = IntVar()
+        self.guessCounter = 0
 
         print(self.guessNumber)
 
         # GUI
         self.masterFrame = Frame(self.master)
-        self.topText = Label(self.masterFrame, text="The number is:")
-        self.displayText = Label(self.masterFrame, textvariable=self.guessIndicator)
+        self.topText = Label(self.masterFrame, text="Number of incorrect guesses:")
+        self.displayText = Label(self.masterFrame, textvariable=str(self.guessDisplay))
 
         self.numberEntry = Entry(self.masterFrame)
         self.submitBox = Button(self.masterFrame, text="Submit", command=self.compareValue)
@@ -31,8 +32,10 @@ class App:
         self.numberEntry.grid(row=2, column=0)
         self.submitBox.grid(row=2, column=1)
 
-    def refreshNumber(self):
+    def refreshGame(self):
         self.guessNumber = random.randint(1, 100)
+        self.guessCounter = 0
+        self.numberEntry.delete(0, END)
 
     def compareValue(self):
 
@@ -40,17 +43,20 @@ class App:
         
         try:
             if int(self.userNumber) > self.guessNumber:
-                self.guessIndicator.set("LOWER")
+                self.guessCounter += 1
+                messagebox.showinfo("Guess", "The number is lower!")
             elif int(self.userNumber) < self.guessNumber:
-                self.guessIndicator.set("HIGHER")
+                self.guessCounter += 1
+                messagebox.showinfo("Guess", "The number is higher!")
             elif int(self.userNumber) == self.guessNumber:
                 result = messagebox.askquestion("You win!", "Do you want to play again?")
 
                 if result == 'yes':
-                    self.refreshNumber()
+                    self.refreshGame()
                     print(self.guessNumber)
                 else:
-                    quit()
+                    pass
+            self.guessDisplay.set(self.guessCounter)
         except:
             messagebox.showinfo("Invalid Entry", "Please enter a valid number!")
 
