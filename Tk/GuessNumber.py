@@ -8,14 +8,20 @@ import random
 class App:
     def __init__(self, master):
         self.master = master 
-        
+
+        # Game Variables
+        self.guessNumber = random.randint(1, 100)
+        self.guessIndicator = StringVar()
+
+        print(self.guessNumber)
+
         # GUI
         self.masterFrame = Frame(self.master)
         self.topText = Label(self.masterFrame, text="The number is:")
-        self.displayText = Label(self.masterFrame, text="TEST")
+        self.displayText = Label(self.masterFrame, textvariable=self.guessIndicator)
 
         self.numberEntry = Entry(self.masterFrame)
-        self.submitBox = Button(self.masterFrame, text="Submit")
+        self.submitBox = Button(self.masterFrame, text="Submit", command=self.compareValue)
 
         # Pack widgets
         self.masterFrame.grid(row=0, column=0)
@@ -25,8 +31,28 @@ class App:
         self.numberEntry.grid(row=2, column=0)
         self.submitBox.grid(row=2, column=1)
 
-    def retrieveValue():
-        pass
+    def refreshNumber(self):
+        self.guessNumber = random.randint(1, 100)
+
+    def compareValue(self):
+
+        self.userNumber = self.numberEntry.get()
+        
+        try:
+            if int(self.userNumber) > self.guessNumber:
+                self.guessIndicator.set("LOWER")
+            elif int(self.userNumber) < self.guessNumber:
+                self.guessIndicator.set("HIGHER")
+            elif int(self.userNumber) == self.guessNumber:
+                result = messagebox.askquestion("You win!", "Do you want to play again?")
+
+                if result == 'yes':
+                    self.refreshNumber()
+                    print(self.guessNumber)
+                else:
+                    quit()
+        except:
+            messagebox.showinfo("Invalid Entry", "Please enter a valid number!")
 
 def main():
     root = Tk()
