@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+	<title>Test For Five</title>
+
+	<style>
+
+	body {
+		background-color: #000000;
+	}
+
+	h1 {
+		color: #FF00FF;
+	}
+
+	p {
+		color: #00FF00;
+	}
+
+	button {
+		background-color: #00FF00;
+	}
+
+	#header-title {
+		text-align: center;
+	}
+
+	#header-container {
+		border-color: #FFF;
+		border-style: solid;
+		border-width: 10px;
+		border-radius: 10px;
+		padding: 10px;
+
+		background-color: #555;
+
+		text-align: center;
+	}
+
+	</style>
+
+</head>
+
+<body>
+
+	<div id="header-container">
+
+		<h1 id="header-title"> Test For Five </h1>
+
+		<p> Welcome to Test For Five! This site compares numbers you put in to the number 5, interesting right?</p>
+
+		<p> To use this site, simply just click on the button below to enter an input: </p>
+
+		<button onclick="fivetest()"> Click Me </button>
+
+		<h1 id="result"></h1>
+
+	</div>
+
+	<script>
+
+		function fivetest() {
+			var number = prompt("Please enter a number:");
+
+			if(number > 5) {
+				document.getElementById("result").innerHTML = "The number is larger than 5!";
+			} else if (number == 5) {
+				document.getElementById("result").innerHTML = "You entered 5!";
+			} else if (number < 5) {
+				document.getElementById("result").innerHTML = "You entered less than 5!";
+				console.log(number);
+			} else {
+				document.getElementById("result").innerHTML = "That wasn't a number...";
+			}
+		}
+
+	</script>
+</body>
+
+</html>
