@@ -21,6 +21,7 @@
 
 	button {
 		background-color: #00FF00;
+		border-radius: 5px;
 	}
 
 	#header-title {
@@ -49,7 +50,7 @@
 
 		<h1 id="header-title"> Test For Five </h1>
 
-		<p> Welcome to Test For Five! This site compares numbers you put in to the number 5, interesting right?</p>
+		<p> Welcome to Test For Five! This site compares numbers you put in to the number 5 with a totally ugly colour scheme, interesting right?</p>
 
 		<p> To use this site, simply just click on the button below to enter an input: </p>
 
@@ -64,7 +65,9 @@
 		function fivetest() {
 			var number = prompt("Please enter a number:");
 
-			if(number > 5) {
+			if(number == "") {
+				document.getElementById("result").innerHTML = "Please enter something.";
+			} else if (number > 5) {
 				document.getElementById("result").innerHTML = "The number is larger than 5!";
 			} else if (number == 5) {
 				document.getElementById("result").innerHTML = "You entered 5!";
