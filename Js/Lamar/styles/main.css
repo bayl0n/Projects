@@ -1,0 +1,107 @@
+body {
+	margin-top: 50px;
+	font-family: arial, verdana, sans-serif;
+	background-color: #2A2A2A;
+}
+
+a {
+	text-decoration: none;
+	color: #FFFFFF
+}
+
+#header {
+	position: fixed;
+	width: 100%;
+	top: 0;
+	left: 0;
+	background-color: #1A1A1A; 
+	z-index: 2;
+}
+
+h1.logo {
+	position: relative;
+	top: 0.3em;
+	text-transform: uppercase;
+	letter-spacing: 0.1em;
+	margin: 0.5em 0.1em 0.1em 0.2em;
+	color: #AB0000;
+}
+
+h3.logo {
+	position: relative;
+	top: 0.2em;
+	margin: 0.1em auto 0.3em 0.2em;
+	color: #E4E4E4;
+}
+
+div.nav {
+	display: inline-block;
+}
+
+ul.nav {
+	position: absolute;
+	float: right;
+	top: 60%;
+	left: 70%;
+}
+
+li.nav {
+	display: inline;
+	background-color: #1F1F1F;
+	padding: 0.5em 1.4em;
+}
+
+.content {
+	width: 1000px;
+	margin: 0 auto;
+}
+
+h2.main-article {
+	color: #AB0000;
+}
+
+.main-image {
+	margin: 10px;
+}
+
+.main-text {
+	display: inline-block;
+	left: 55%;
+	top: 10%;
+	height: 500px;
+	min-width: 300px;
+	max-width: 350px;
+}
+
+.main-article {
+	color: #FFFFFF;
+}
+
+h2.more-articles {
+	color: #AB1111;
+}
+
+.article-heading {
+	color: #E4E4E4;
+}
+
+div.article1 {
+	float: left;
+	margin: 2%;
+	padding: 2%;
+	width: 25%;
+}
+
+div.article2 {
+	float: left;
+	margin: 2%;
+	padding: 2%;
+	width: 25%;
+}
+
+div.article3 {
+	float: left;
+	margin: 2%;
+	padding: 2%;
+	width: 25%;
+}
