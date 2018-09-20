@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+	<!-- CSS -->
+	<style>
+		body {
+			background-color: gray;
+			color: white;
+			text-align: center;
+		}
+
+		header {
+			border: 5px solid black;
+		}
+
+		#display-entry {
+			font-size: 10em;
+			color: blue;
+		}
+	</style>
+</head>
+
+<body>
+	<header>
+		<h1><u>Text Display</u></h1>
+
+		<h2>By Nathan Baylon</h2>
+	</header>
+
+	<article>
+		<p>Displays text to a screen</p>
+
+		<form action="javascript:displayForm();">
+			<input type="text" id="input-entry">
+			<button id="button-entry">Click Here</button>	
+		</form>
+
+		<p id="display-entry"></p>
+	</article>
+
+	<script>
+		function displayForm() {
+			document.getElementById("display-entry").innerHTML = document.getElementById("input-entry").value;
+		}
+	</script>
+
+</body>
+
+</html>
