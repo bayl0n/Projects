@@ -16,6 +16,7 @@ The resources that I have used so far to learn:
 
 **Online:**
 * [YouTube](www.youtube.com) (more detailed information will be added later such as channels)
+ * CS Dojo
 * [FreeCodeCamp](https://learn.freecodecamp.org)
   * I highly recommend this website, especially for those interested in Web Development
 
