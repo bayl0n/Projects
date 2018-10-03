@@ -8,7 +8,7 @@ This was created 25th of August, 2018
 
 # What will be found here?
 
-Programming projects either from Python or other languages that I learn in the future
+Programming projects either from Python or other languages that I learn in the future such as Java.
 
 # Resources
 
