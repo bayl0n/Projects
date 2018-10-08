@@ -1,0 +1,3 @@
+String name = "Nathan Baylon";
+double weight = 75.4;
+int age = 18;
