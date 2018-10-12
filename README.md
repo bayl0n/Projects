@@ -10,6 +10,8 @@ This was created 25th of August, 2018
 
 Programming projects either from Python or other languages that I learn in the future such as Java.
 
+Minecraft mods coming soon.
+
 # Resources
 
 The resources that I have used so far to learn:
