@@ -18,7 +18,7 @@ public class Calculator {
 	}
 
 	public static void main(String[] args) {
-
+		// Creating an object of the Calculator class
 		Calculator app = new Calculator();
 
 		app.sayHello();
