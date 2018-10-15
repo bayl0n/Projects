@@ -23,6 +23,7 @@ The resources that I have used so far to learn:
 * [FreeCodeCamp](https://learn.freecodecamp.org)
   * I highly recommend this website, especially for those interested in Web Development
 * CodeCademy
+  * Not used as much as the others
 
 **Books:**
 * Introduction to Algorithms by Charles E. Leiserson, Clifford Stein, Ronald Rivest, and Thomas H. Cormen
