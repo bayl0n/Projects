@@ -8,7 +8,7 @@ def fibonacci(number):
     # Format table headings
     print("\nTerm:\tValue:")
 
-    # Iterates to add up two number in the list to create a new third value that is added in later iterations
+    # Iterates to add up two numbers within the list to create a new third value "addedNumber" which is added in later iterations
     for unit in range(number + 1):
 
         addedNumber= fib_list[unit] + fib_list[unit + 1]
