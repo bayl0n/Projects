@@ -15,5 +15,7 @@ def main():
 
     soup = BeautifulSoup(page.text, 'html.parser')
 
+    OpenChrome()
+
 if __name__ == "__main__":
     main()
