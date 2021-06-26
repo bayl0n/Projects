@@ -11,11 +11,13 @@ def OpenChrome():
     webbrowser.open('http://www.google.com')
 
 def main():
-    page = requests.get('https://www.macworld.co.uk/feature/mac/best-macbook-2018-3665084/')
+    page = requests.get('https://store.steampowered.com/')
 
     soup = BeautifulSoup(page.text, 'html.parser')
 
-    OpenChrome()
+    # OpenChrome()
+
+    print(soup.find(id="topsellers_tier"))
 
 if __name__ == "__main__":
     main()
