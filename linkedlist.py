@@ -21,6 +21,11 @@ class LinkedList:
             print(current.data)
             current = current.next
 
+    def pop(self):
+        if self.head is not None:
+            temp = self.head
+            self.head = self.head.next
+            del temp
 
 if __name__ == "__main__":
     myList = LinkedList()
@@ -30,4 +35,6 @@ if __name__ == "__main__":
     myList.insert("Apple")
     myList.insert("Private")
 
+    myList.display()
+    myList.pop()
     myList.display()
