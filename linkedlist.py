@@ -28,11 +28,13 @@ class LinkedList:
             del temp
 
     def reverse(self):
-       previousNode = None
-       currentNode = None
-       nextNode = self.head 
+        previousNode = None
+        currentNode = None
+        nextNode = self.head 
 
-       
+        while currentNode is not None:
+            
+
 
 if __name__ == "__main__":
     myList = LinkedList()
