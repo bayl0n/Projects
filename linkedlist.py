@@ -27,16 +27,6 @@ class LinkedList:
             self.head = self.head.next
             del temp
 
-    # def reverse(self):
-    #     previousNode = None
-    #     currentNode = None
-    #     nextNode = self.head 
-
-    #     while currentNode is not None:
-    #         previousNode = currentNode
-    #         currentNode = nextNode
-    #         nextNode = currentNode.next
-
 if __name__ == "__main__":
     myList = LinkedList()
 
