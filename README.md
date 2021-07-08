@@ -25,4 +25,5 @@ The resources that I have used so far to learn:
 
 **Books:**
 * Introduction to Algorithms by Charles E. Leiserson, Clifford Stein, Ronald Rivest, and Thomas H. Cormen
-* Learn Java the Easy Way by No Starth Press
+* Learn Java the Easy Way by No Starch Press
+
