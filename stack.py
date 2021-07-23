@@ -30,9 +30,6 @@ if __name__ == "__main__":
     myStack = Stack()
 
     print(myStack.push("Banana"))
-    # print(myStack.push("Fish"))
-    # print(myStack.push("Bread"))
-    # print(myStack.push("Milk"))
     print(myStack.pop())
     print(myStack.top())
     print(myStack)
