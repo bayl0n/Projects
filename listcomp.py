@@ -20,3 +20,9 @@ newlist = [(x**2) for x in mylist]
 
 print(newlist)
 
+# Example #2
+mylist = [1, 2, 3, 4, 5, 6]
+
+newlist = [(x+2) for x in mylist]
+
+print(newlist)
